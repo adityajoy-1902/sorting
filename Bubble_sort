@@ -1,0 +1,14 @@
+class Solution {
+public:
+    vector<int> bubbleSort(vector<int>& nums) {
+        for(int i = nums.size()-1;i>=1;i--){
+            for(int j =0;j<=i-1;j++){
+                if(nums[j]>nums[i]){
+                    swap(nums[j],nums[i]);
+                }
+            }
+        }
+        return nums;
+
+    }
+};
